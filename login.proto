@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+
+
+message Login_Data {
+    string open_ID = 22;
+    string Access_token = 29;
+    string platForm23 = 23;
+    string platForm99 = 99;
+    string platForm100 = 100;
+}

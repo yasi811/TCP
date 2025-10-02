@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Major_response {
+    string jwt = 8 ;
+}
+

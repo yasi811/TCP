@@ -1,0 +1,181 @@
+syntax = "proto3";
+
+package freefire;
+
+message PlayerResponse {
+
+  message PlayerInfo {
+    uint64 acc_uid = 1;
+    uint32 acc_type = 2;
+    string acc_name = 3;
+    // حقل 4 غير موجود
+    string acc_region = 5;
+    uint32 acc_level = 6;
+    uint32 acc_experience = 7;
+    // حقل 8-10 غير موجودة
+    uint32 account_banner = 11;
+    uint32 avatar = 12;
+    // حقل 13 غير موجود
+    uint32 field14 = 14;      // 319
+    uint32 br_score = 15;
+    uint32 boyah_pass_badge = 16;
+    uint32 field17 = 17;
+    uint32 boyah_badge_count = 18;
+    uint32 field19 = 19;      // 1001000086
+    uint32 season = 20;
+    uint32 likes_count = 21;
+    // حقل 22 غير موجود
+    uint32 field23 = 23;
+    uint64 last_login = 24;
+    // حقل 25-29 غير موجود
+    uint32 field30 = 30;
+    uint32 field31 = 31;
+    bytes some_bytes = 32;
+    // حقل 33-34 غير موجود
+    uint32 field35 = 35;
+    uint32 field36 = 36;
+    // حقل 37 غير موجود
+    uint32 equipped_badge = 38;
+
+    message Nested41 {
+      // حقل 1، 2 غير موجودة
+      uint32 field3 = 3;
+      string field4 = 4;
+      string field5 = 5;
+      uint32 field7 = 7;
+    }
+    Nested41 field41 = 41;
+
+    uint64 created_date = 44;
+    uint32 icon_title = 48;
+
+    message Nested49 {
+      // حقل 1 غير موجودة
+      uint32 field2 = 2;
+      uint32 field3 = 3;
+    }
+    Nested49 field49 = 49;
+
+    string real_version = 50;
+    uint32 field52 = 52;
+    uint32 field53 = 53;
+
+    message Nested61 {
+      uint32 field1 = 1;
+      uint32 field2 = 2;
+
+      message Nested61_3 {
+        uint32 field1 = 1;
+        uint32 field2 = 2;
+        uint32 field3 = 3;
+        uint32 field4 = 4;
+        uint32 field5 = 5;
+      }
+      Nested61_3 field3 = 3;
+    }
+    repeated Nested61 field61 = 61;
+
+    message Nested63_1 {
+      uint32 field1 = 1;
+      uint32 field2 = 2;
+      uint32 field3 = 3;
+    }
+    repeated Nested63_1 field63_1 = 63;
+
+    message Nested64 {
+      uint32 field1 = 1;
+      uint32 field2 = 2;
+    }
+    Nested64 field64 = 64;
+
+    message Skin {
+      uint32 skin_id = 1;
+      uint32 skin_value = 2;
+      uint32 skin_type = 3;
+    }
+    repeated Skin skins = 65;
+
+    uint32 field66 = 66;
+    uint32 field67 = 67;
+    uint32 field68 = 68;
+    uint32 field69 = 69;
+    uint32 field70 = 70;
+    uint32 field71 = 71;
+    uint32 field72 = 72;
+    uint32 field73 = 73;
+
+    message Nested75 {
+      uint32 field1 = 1;
+      uint32 field2 = 2;
+    }
+    Nested75 field75 = 75;
+
+    message Nested76 {
+      uint64 field1 = 1;
+      uint32 field2 = 2;
+      string field3 = 3;
+    }
+    Nested76 field76 = 76;
+  }
+
+  PlayerInfo player_info = 1;
+
+  message Message2 {
+    uint64 field1 = 1;
+    uint32 field3 = 3;
+    bytes field4 = 4;
+
+    message Nested5 {
+      uint32 field2 = 2;
+      uint32 field3 = 3;
+    }
+    repeated Nested5 field5 = 5;
+
+    uint32 field6 = 6;
+    uint32 field8 = 8;
+  }
+  Message2 message2 = 2;
+
+  message Message6 {}
+  Message6 message6 = 6;
+
+  message Message8 {
+    uint64 field1 = 1;
+    uint32 field3 = 3;
+    uint32 field4 = 4;
+    uint32 field5 = 5;
+    uint64 field6 = 6;
+    uint64 field9 = 9;
+  }
+  Message8 message8 = 8;
+
+  message Message9 {
+    uint64 field1 = 1;
+    uint32 field2 = 2;
+    uint32 field3 = 3;
+    uint32 field4 = 4;
+    uint32 field5 = 5;
+    uint32 field8 = 8;
+    string bio = 9;
+    uint32 field10 = 10;
+
+    message Nested14 {}
+  }
+  Message9 message9 = 9;
+
+  message Message10 {
+    uint32 field1 = 1;
+  }
+  Message10 message10 = 10;
+
+  message Message11 {
+    uint32 honor_score = 1;
+    uint32 field8 = 8;
+    uint32 field9 = 9;
+    uint32 field10 = 10;
+  }
+  Message11 message11 = 11;
+
+  message Message15 {}
+  Message15 message15 = 15;
+}
